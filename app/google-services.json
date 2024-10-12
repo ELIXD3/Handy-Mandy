@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "783899176985",
+    "project_id": "handy-mender",
+    "storage_bucket": "handy-mender.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783899176985:android:8a79744c0c161bb4dcba88",
+        "android_client_info": {
+          "package_name": "com.group5.handymender"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8TPAhlMZ2PDgxnLgdYaOVrzfqsG-c9Ko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

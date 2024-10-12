@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Handy Mender</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Don\'t Have an account?</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="slogan">We solve your municipality issues, Start Today</string>
+    <string name="skip_for_now">Skip for now</string>
+    <string name="home">Home</string>
+    <string name="reports">Reports</string>
+    <string name="new_report">New Report</string>
+    <string name="notifications">Notifications</string>
+    <string name="account">Account</string>
+
+
+    <string-array name="category_items">
+        <item>Road and Traffic Issues</item>
+        <item>Public Infrastructure</item>
+        <item>Health and Sanitation</item>
+        <item>Housing and Urban Development</item>
+        <item>Utilities and Energy</item>
+        <item>Environmental Concerns</item>
+        <item>Water and Sewage</item>
+        <item>Public Safety</item>
+        <item>Waste Management</item>
+        <item>Other</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
