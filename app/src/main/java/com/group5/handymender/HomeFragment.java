@@ -2,6 +2,7 @@ package com.group5.handymender;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -64,22 +65,27 @@ public class HomeFragment extends Fragment {
                 .addSnapshotListener(new EventListener<QuerySnapshot>() {
                     @Override
                     public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
-                        if (error != null){
-                            if(progressDialog.isShowing()){
+                        if (error != null) {
+                            if (progressDialog.isShowing()) {
                                 progressDialog.dismiss();
                             }
+                            Log.e("FireStore Error", error.getMessage(), error);
                             Toast.makeText(requireContext(), "Error getting data", Toast.LENGTH_SHORT).show();
+                            return;
                         }
-                        assert value != null;
-                        for (DocumentChange documentChange: value.getDocumentChanges()){
-                            if (documentChange.getType() == DocumentChange.Type.ADDED){
-                                reportItem reportItem = documentChange.getDocument().toObject(reportItem.class);
-                                reportItem.setDocumentId(documentChange.getDocument().getId());
-                                reportItems.add(reportItem);
+
+                        if (value != null) {
+                            for (DocumentChange documentChange : value.getDocumentChanges()) {
+                                if (documentChange.getType() == DocumentChange.Type.ADDED) {
+                                    reportItem reportItem = documentChange.getDocument().toObject(reportItem.class);
+                                    reportItem.setDocumentId(documentChange.getDocument().getId());
+                                    reportItems.add(reportItem);
+                                }
                             }
+                            reportItemAdapter.notifyDataSetChanged();
                         }
-                        reportItemAdapter.notifyDataSetChanged();
-                        if(progressDialog.isShowing()) {
+
+                        if (progressDialog.isShowing()) {
                             progressDialog.dismiss();
                         }
                     }

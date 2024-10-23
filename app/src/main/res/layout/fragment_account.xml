@@ -61,29 +61,29 @@
                 tools:text="example@email.com"/>
 
             <TextView
-                android:id="@+id/courseLabelTv"
+                android:id="@+id/phoneLabelTv"
                 style="@style/TextAppearance.Material3.LabelLarge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/emailLabelTv"
                 android:layout_marginTop="10dp"
-                android:text="Course"/>
+                android:text="Phone No."/>
             <TextView
-                android:id="@+id/courseTv"
+                android:id="@+id/phoneTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="@style/TextAppearance.Material3.BodySmall"
                 android:layout_alignParentEnd="true"
                 android:layout_below="@id/emailLabelTv"
                 android:layout_marginTop="10dp"
-                tools:text="BINCT"/>
+                tools:text="0000000000"/>
 
             <TextView
                 android:id="@+id/birth_dateLabelTv"
                 style="@style/TextAppearance.Material3.LabelLarge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/courseLabelTv"
+                android:layout_below="@id/phoneLabelTv"
                 android:layout_marginTop="10dp"
                 android:text="Date of birth"/>
             <TextView
@@ -92,34 +92,16 @@
                 android:layout_height="wrap_content"
                 style="@style/TextAppearance.Material3.BodySmall"
                 android:layout_alignParentEnd="true"
-                android:layout_below="@id/courseLabelTv"
+                android:layout_below="@id/phoneLabelTv"
                 android:layout_marginTop="10dp"
                 tools:text="@tools:sample/date/ddmmyy"/>
-
-            <TextView
-                android:id="@+id/institutionLabelTv"
-                style="@style/TextAppearance.Material3.LabelLarge"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/birth_dateLabelTv"
-                android:layout_marginTop="10dp"
-                android:text="Institution"/>
-            <TextView
-                android:id="@+id/institutionTv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/TextAppearance.Material3.BodySmall"
-                android:layout_alignParentEnd="true"
-                android:layout_below="@id/birth_dateLabelTv"
-                android:layout_marginTop="10dp"
-                tools:text="Durban University of Technology"/>
 
             <TextView
                 android:id="@+id/genderLabelTv"
                 style="@style/TextAppearance.Material3.LabelLarge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/institutionLabelTv"
+                android:layout_below="@id/birth_dateLabelTv"
                 android:layout_marginTop="10dp"
                 android:text="Gender"/>
             <TextView
@@ -128,7 +110,7 @@
                 android:layout_height="wrap_content"
                 style="@style/TextAppearance.Material3.BodySmall"
                 android:layout_alignParentEnd="true"
-                android:layout_below="@id/institutionLabelTv"
+                android:layout_below="@id/birth_dateLabelTv"
                 android:layout_marginTop="10dp"
                 tools:text="Male"/>
 
@@ -151,47 +133,11 @@
                 tools:text="00000000000000"/>
 
             <TextView
-                android:id="@+id/student_numberLabelTv"
-                style="@style/TextAppearance.Material3.LabelLarge"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/national_idLabelTv"
-                android:layout_marginTop="10dp"
-                android:text="Student No."/>
-            <TextView
-                android:id="@+id/student_numberTv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/TextAppearance.Material3.BodySmall"
-                android:layout_alignParentEnd="true"
-                android:layout_below="@id/national_idLabelTv"
-                android:layout_marginTop="10dp"
-                tools:text="0000000"/>
-
-            <TextView
-                android:id="@+id/interestsLabelTv"
-                style="@style/TextAppearance.Material3.LabelLarge"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/student_numberLabelTv"
-                android:layout_marginTop="10dp"
-                android:text="Interests"/>
-            <TextView
-                android:id="@+id/interestsTv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/TextAppearance.Material3.BodySmall"
-                android:layout_alignParentEnd="true"
-                android:layout_below="@id/student_numberLabelTv"
-                android:layout_marginTop="10dp"
-                tools:text="Gaming"/>
-
-            <TextView
                 android:id="@+id/home_addressLabelTv"
                 style="@style/TextAppearance.Material3.LabelLarge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/interestsLabelTv"
+                android:layout_below="@id/national_idLabelTv"
                 android:layout_marginTop="10dp"
                 android:text="Home Address"/>
             <TextView
@@ -200,7 +146,7 @@
                 android:layout_height="wrap_content"
                 style="@style/TextAppearance.Material3.BodySmall"
                 android:layout_alignParentEnd="true"
-                android:layout_below="@id/interestsLabelTv"
+                android:layout_below="@id/national_idLabelTv"
                 android:layout_marginTop="10dp"
                 tools:text="13 idk road, Durban"/>
 

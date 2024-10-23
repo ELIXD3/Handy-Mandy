@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.imageview.ShapeableImageView;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -63,7 +64,8 @@ import java.util.ArrayList;
 
         public static class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-            ImageView profilePicture, statusPicture;
+            ShapeableImageView profilePicture;
+            ImageView  statusPicture;
             TextView fullName, location, category, description, date;
             Button commentBtn;
 

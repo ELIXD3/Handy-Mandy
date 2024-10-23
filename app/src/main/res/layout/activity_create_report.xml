@@ -29,7 +29,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/address"
+            android:id="@+id/location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Address, Map Cordinates, Nearby Places" />
@@ -45,7 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/category"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:entries="@array/category_items"
@@ -64,14 +64,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/category"
+            android:id="@+id/description"
             android:layout_width="match_parent"
             android:layout_height="140dp"
             android:hint="Describe the problem....." />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/submitBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -79,5 +79,13 @@
         android:text="Submit Report"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/submitBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
